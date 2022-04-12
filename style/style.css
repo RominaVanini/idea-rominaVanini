@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+.webHeader{
+    display:grid;
+    background-color: aquamarine;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 0%;
+    padding-top: 3%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "webLogo webName webName"
+    "webLogo menuHeader menuHeader"
+    ;
+
+}
+
+
+.webName{
+    grid-area: webName;
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 10%;
+    
+}
+
+
+
+.menuHeader{
+    width: 100%;
+    background-color: black;
+    grid-area: menuHeader;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    
+}
+
+.webLogo{
+    width: 50px;
+    grid-area: webLogo;
+    
+    
+}
+
+.webLogo img{
+    width: 200%;
+    display: flex;
+    justify-content: right;
+}
+
+ul{
+    list-style-type: none;
+    color: black;
+    margin: 0%;
+    padding: 0%;
+  
+}
+
+.menuHeader li{
+    display: inline-block;
+}
+
+.menuHeader li a{
+    padding: initial;
+    color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    word-spacing: 500%;
+    text-transform: uppercase;
+    display: block;
+    padding: 5px 90px;
+    
+}
+
+.menuHeader li a:hover{
+    background-color: #9eb7cb;
+}
+
+/*/Header */
+
+/*Main*/
+
+
+.webMain{
+background-image: url(../multimedios/background\ image.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+margin:0%;
+padding-bottom: 50px;
+}
+
+.indexMain{
+    display: flex;
+    justify-content: center;
+}
+
+
+.nosotrosMain{
+    display: flex;
+    justify-content: center;
+}
+.serviciosMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    margin-top:0%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    
+}
+
+.serviciosFlex{
+    display: flex;
+    justify-content: space-around;
+}
+.mainImage{
+    max-width: 80%;
+    margin-top: 5%; 
+    display: flex;
+    justify-items: center;  
+}
+
+.mainDescription{
+    font-family: cursive;
+    color: #001a57;
+    font-weight: bold;
+    line-height: 30px;
+    background-color: #f0f5f7;
+    background-position: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainVideoDescription{ 
+
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 5%;
+}
+.mainVideo{
+margin-bottom: 5%;
+}
+
+/*CSS en clientes.html*/
+.sectionClientes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+}
+.imgClientes{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 180px;
+}
+
+.div.imgClientes{
+    width: 100%;
+    height: auto;
+}
+
+ /*CSS en formulario*/
+    input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+    input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+    input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+    input[type=submit] {
+    width: 20%;
+    background-color: #272b28;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #247a05;
+  }
+
+  input[type=reset] {
+    width: 30%;
+    background-color: #272b28;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  input[type=reset]:hover {
+    background-color: #247a05;
+  }
+
+  .formContacto {
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+
+/*/Main*/
+
+/*Footer*/
+.webFooter{
+    background-color: aquamarine;
+    margin: 0%;
+    padding: 2%;
+}
+
+.footerDescription{
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+.footerMailTel{
+    text-transform: lowercase;
+    font-weight: bolder;
+}
+
+.footerSociales{
+    text-align: right;
+}
+
+.iconosFooter{
+    width: 2%;
+}
+
+/*Footer*/
+
+/*media queries*/
+
+@media screen and (min-width:480px) and (max-width:960px){
+
+    .webHeader{
+    
+        display:grid;    
+        padding-top: 3%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-template-areas: 
+    
+        "webLogo webName webName" 
+    
+        "webLogo menuHeader menuHeader"
+        ;
+    
+    }
+    
+    .webHeader h1{
+    
+        font-size: 24px; 
+        justify-content: right;
+    
+    }
+    
+    .webLogo{
+        font-size: 12px;
+    }
+    .menuHeader{
+        display: grid;
+
+    }
+    .videoResponsive{
+        position: relative;
+        padding-bottom: 56.25%; /* 16/9 ratio */
+        padding-top: 30px; /* IE6 workaround*/
+        height: 0;
+        overflow: hidden;
+
+    }
+    
+    .videoResponsive iframe,
+    .videoResponsive object,
+    .videoResponsive embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+
+    }
